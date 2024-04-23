@@ -1,1 +1,43 @@
+.App {
+  text-align: center;
+}
+
+.image-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  gap: 10px;
+}
+
+.grid-image {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.result-container {
+  position: absolute;
+  top: 50%;
+  right: 200px;
+  transform: translateY(-50%);
+}
+
+.result-box {
+  background-color: #f3f4f6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(23, 80, 70, 0.1);
+}
+
+.result-box h2 {
+  margin-bottom: 10px;
+}
 
